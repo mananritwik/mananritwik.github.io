@@ -1,105 +1,236 @@
 <!DOCTYPE html>
-<html>
-<head>
-  <title>Ritwik Manan</title>
-  <meta charset="UTF-8">
-  <link rel="stylesheet" type="text/css" href="style.css">
-  <script src="http://ajax.googleapis.com/ajax/libs/jquery/2.1.4/jquery.min.js"></script>
-</head>
-<body>
-  <div class="header">
-      <div class="container">
-        <h1 class="header-heading">Ritwik Manan</h1>
-      <!-- </div>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>Manan</title>
+    <!-- Bootstrap and jQuery -->
+    <link rel="stylesheet" href="http://maxcdn.bootstrapcdn.com/bootstrap/3.3.5/css/bootstrap.min.css">
+    <script src="http://ajax.googleapis.com/ajax/libs/jquery/1.11.3/jquery.min.js"></script>
+    <script src="http://maxcdn.bootstrapcdn.com/bootstrap/3.3.5/js/bootstrap.min.js"></script>
+    <!-- My own styles -->
+    <link href='https://fonts.googleapis.com/css?family=Gloria+Hallelujah' rel='stylesheet' type='text/css'>
+    <link rel="stylesheet" href="stylesheets/style.css">
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.5.0/css/font-awesome.min.css">
+  </head>
+  <body>
+    <div class="container">
+      <nav class="navbar navbar-inverse" role="navigation">
+        <!-- Brand and toggle get grouped for better mobile display -->
+        <div class="navbar-header">
+          <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#bs-example-navbar-collapse-1">
+            <span class="sr-only">Toggle navigation</span>
+            <span class="icon-bar"></span>
+            <span class="icon-bar"></span>
+            <span class="icon-bar"></span>
+          </button>
+          <a class="navbar-brand" href="#">Manan</a>
+        </div>
+
+        <!-- Collect the nav links, forms, and other content for toggling -->
+        <div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
+          <ul class="nav navbar-nav">
+            <li>
+              <a href="index.html">
+                <i class="fa fa-home"></i>
+                Home
+              </a>
+            </li>
+            <li class="dropdown">
+              <a href="#" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-expanded="false">
+                <i class="fa fa-list-ul"></i>
+                Summary
+                <span class="fa fa-chevron-circle-down"></span>
+              </a>
+              <ul class="dropdown-menu" role="menu">
+                <li><a href="#">Intro</a></li>
+                <li><a href="#">Experience</a></li>
+                <li><a href="#">Skills</a></li>
+                <li><a href="#">Hobbies</a></li>
+                <li><a href="#">Quotes</a></li>
+              </ul>
+            </li>
+            <li class="dropdown">
+              <a href="#" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-expanded="false">
+                <i class="fa fa-youtube-play"></i>
+                Media
+                <span class="fa fa-chevron-circle-down"></span>
+              </a>
+              <ul class="dropdown-menu" role="menu">
+                <li><a href="#">Presentations</a></li>
+                <li><a href="#">Dance</a></li>
+                <li><a href="#">Music</a></li>
+              </ul>
+            </li>
+          </ul>
+          <ul class="nav navbar-nav navbar-right">
+            <li><a href="#"><span class="glyphicon glyphicon-user"></span> Sign Up</a></li>
+            <li><a href="#"><span class="glyphicon glyphicon-log-in"></span> Login</a></li>
+          </ul>
+        </div>
+      </nav>
     </div>
-    <div class="nav-bar">
-      <div class="container"> -->
-        <ul class="nav">
-          <li><a href="#Summary">Summary</a></li>
-          <li><a href="#Experience">Experience</a></li>
-          <li><a href="#Skills">Skills</a></li>
-          <li><a href="#Hobbies">Hobbies</a></li>
+    <div class="container">
+      <h1 class="title">
+        Summary
+      </h1>
+      <div class="col-md-2 text-center">
+          <p><img src="images/FBDP2.jpg" class="img-circle"></p>
+          <p><strong>Born:</strong> 1989</p>
+      </div>
+      <div class="col-md-5 summary">
+        <ul class="nav nav-tabs">
+          <li class="active"><a data-toggle="tab" href="#intro">Intro</a></li>
+          <li><a data-toggle="tab" href="#experience">Experience</a></li>
+          <li><a data-toggle="tab" href="#skills">Skills</a></li>
         </ul>
+
+      <div class="tab-content">
+        <div id="intro" class="tab-pane fade in active">
+          <h3>Intro</h3>
+          <p>
+          I did my engineering undergrad at IIT in India and there I got a view into the budding tech startup scene which convinced me to join an ecommerce startup, Flipkart.com, soon after college which kind of scared my parents because at that time in terms of ecommerce India was like the US back in ‘95-‘96. But we’ve grown to become India’s Amazon but double the size of Amazon in India so things worked out well.
+          <br>Personally I especially enjoy dancing and try to keep pursuing it in some form or another. 
+          </p>
+        </div>
+        <div id="experience" class="tab-pane fade">
+          <h3>Experience</h3>
+          <p>Senior Manager - Product Marketing and Growth, Flipkart.com
+          <br>Manager - Marketplace, Flipkart.com
+          <br>Business Development Manager, Flipkart.com
+          <br>Advisor, Kountmoney.com
+          </p>
+        </div>
+        <div id="skills" class="tab-pane fade">
+          <h3>Skills</h3>
+          <p>Project Management
+          <br>Strategy
+          <br>Marketing
+          <br>Excel
+          </p>
+        </div>
+      </div>
+      </div>
+      <div class="col-md-5 contact">
+          <h2>Contact</h2>
+          <ul class="list-unstyled">
+            <li><a href="#"><span class="fa fa-envelope"></span> EMail</a></li>
+            <li><a href="#"><span class="fa fa-angellist"></span> Angellist</a></li>
+            <li><a href="#"><span class="fa fa-facebook-square"></span> Facebook</a></li>
+            <li><a href="#"><span class="fa fa-linkedin"></span> LinkedIn</a></li>
+            <li><a href="#"><span class="fa fa-twitter"></span> Twitter</a></li>
+          </ul>
       </div>
     </div>
-  <div id="wrapper">
-    <!-- <h1>Ritwik Manan</h1> -->
-    <p>
-      <img src="FBDP.jpg">
-    </p>
-    <h2>Product and Growth Professional</h2>
-    <h3>Evanston, IL</h3>
-    <div>
-      <h4>Connect With Me</h4>
-      <ul>
-        <li><a href="mailto:ritwik.manan@gmail.com">Email</a></li>
-        <li><a href="http://twitter.com/manan_ritwik">Twitter</a></li>
-        <li><a href="http://facebook.com/ritwik.manan">Facebook</a></li>
-      </ul>
-    </div>
-    <div>
-    <a name="Summary"></a> 
-      <h4 id="summary">Summary</h4>
-      <p>
-        Ritwik is a tech professional currently pursuing his MBA at Kellogg School of Management. He loves talking about technology and watching the tech startup scene.
-      </p>
-    </div>
-    <div>
-    <a name="Experience"></a>
-      <h4 class="unicorns">Experience</h4>
-      <div>
-        <h5>Senior Manager - Product Marketing and Growth, Flipkart.com</h5>
-        <p>- Conceptualized and launched campaigns to increase app installs and engagement<br>
-           - Gamification – launched the first fully integrated game within the app (industry first)<br>
-           - Growth Projects - Working on growth projects across the organisation
-        </p>
+    <div class="container">
+      <h1>Few of my Favorite Things..</h1>
+      <h2>Dance</h2>
+      <iframe width="420" height="315" src="https://www.youtube.com/embed/cBf3RCjWcHA" frameborder="0" allowfullscreen></iframe>
+      <iframe width="420" height="315" src="https://www.youtube.com/embed/l7lawMJ5u80" frameborder="0" allowfullscreen></iframe>
+      <h2 class="title">
+        Shawshank Redemption
+        <span class="rating">R</span>
+        <small class="text-muted">
+          <i class="fa fa-star"></i>
+          <i class="fa fa-star"></i>
+          <i class="fa fa-star"></i>
+          <i class="fa fa-star"></i>
+        </small>
+      </h2>
+
+      <div class="row">
+        <div class="col-md-2 text-center">
+          <p><img src="images/poster2.jpg"></p>
+          <p><a href="#" class="btn btn-sm btn-success"><i class="fa fa-amazon"></i> $14.99 Buy in HD</a></p>
+          <p><a href="#" class="btn btn-sm btn-primary"><i class="fa fa-music"></i> $19.99 Soundtrack</a></p>
+          <p><strong>Genre:</strong> Crime, Drama</p>
+          <p><strong>Released:</strong> 1994</p>
+        </div>
+        <div class="col-md-5 summary">
+          <iframe width="320" height="240" src="https://www.youtube.com/embed/xyXX8LXiNJ4" frameborder="0" allowfullscreen></iframe>
+          <h2>Summary</h2>
+          <p>
+            The Shawshank Redemption is a 1994 American drama film written and directed by Frank Darabont, and starring Tim Robbins and Morgan Freeman. Adapted from the Stephen King novella Rita Hayworth and Shawshank Redemption, the film tells the story of Andy Dufresne, a banker who is sentenced to life in Shawshank State Penitentiary for the murder of his wife and her lover, despite his claims of innocence. During his time at the prison, he befriends a fellow inmate, Ellis Boyd "Red" Redding, and finds himself protected by the guards after the warden begins using him in his money-laundering operation.
+          </p>
+        </div>
+        <div class="col-md-5 actors">
+          <h2>Cast</h2>
+          <ul class="list-unstyled">
+            <li><a href="#">Tim Robbins</a> as Andy Dufresne</li>
+            <li><a href="#">Morgan Freeman</a> as Ellis Boyd 'Red' Redding</li>
+            <li><a href="#">Bob Gunton</a> as Warden Norton</li>
+            <li><a href="#">William Sadler</a> as Heywood</li>
+            <li><a href="#">Clancy Brown</a> as Captain Hadley</li>
+          </ul>
+        </div>
       </div>
-      <div>
-        <h5>Manager - Marketplace, Flipkart.com</h5>
-        <p>- Handled Books and General Merchandise categories
-           - Responsible for Strategy, analysis and program management of sales, operations and new category launches<br>
-           - Built a central strategy desk for all categories of marketplace to take care of both sales and operations needs<br>
-           - Leading Merchandising activities for all categories, Sales increased by more than 50% in first 3 months<br>
-        </p>
+
+      <div class="row">
+        <div class="col-md-10 col-md-offset-2">
+          
+        </div>
       </div>
-      <div>
-        <h5>Business Development Manager, Flipkart.com</h5>
-        <p>- Led a team of 14 across  6 locations to gain industry dominance in Media Categories (Home Video and Music)<br>
-           - Profitability Initiatives <br>
-              o Analysed Financial Strength of the categories and created a plan of action for increasing GM<br>
-              o Created a scalable sales forecasting method for Home Video to reduce incorrect inventory pickup<br>
-              o Revamped pricing structures to eliminate operational losses.<br>
-              o Negotiated increase in product margins by an average of 2% with some of the major vendors<br>
-              o Implemented a new cost effective warehousing and sourcing structure<br>
-           - Developed and implemented merchandising and marketing strategies<br>
-        </p>
+      <div class="row">
+        <div class="col-md-10 col-md-offset-2 reviews">
+          <h2 class="page-header">Reviews</h2>
+          <div class="review">
+            <h4>Dan says...</h4>
+            <h5>
+              Stephen King's best adapted movie
+              <i class="fa fa-star"></i>
+              <i class="fa fa-star"></i>
+              <i class="fa fa-star"></i>
+              <i class="fa fa-star"></i>
+              <i class="fa fa-star"></i>
+            </h5>
+            <p>This film is, love it or hate it, flawless.</p>
+          </div>
+
+          <div class="review">
+            <h4>Jeff says...</h4>
+            <h5>
+              Credit where credit is due.
+              <i class="fa fa-star"></i>
+              <i class="fa fa-star"></i>
+              <i class="fa fa-star"></i>
+              <i class="fa fa-star"></i>
+              <i class="fa fa-star-half-o"></i>
+            </h5>
+            <p>Misery and Stand By Me were the best adaptations up until this one, now you can add Shawshank to that list.</p>
+          </div>
+
+          <div class="review">
+            <h4>Groot says...</h4>
+            <h5>
+              Magnificant
+              <i class="fa fa-star"></i>
+              <i class="fa fa-star-half-o"></i>
+            </h5>
+            <p>This movie has got me hooked on a feelin'!</p>
+          </div>
+        </div>
       </div>
-      <div>
-        <h5>Advisor, Kountmoney.com</h5>
-        <p><i>Fast and Easy Loans</i></p>
+
+      <div class="row">
+        <div class="col-md-10 col-md-offset-2 reviews">
+          <h2 class="page-header">Information</h2>
+          <table class="table table-striped table-bordered">
+            <tr>
+              <td><strong>Studio</strong></td>
+              <td>Castle Rock</td>
+            </tr>
+            <tr>
+              <td><strong>Run Time</strong></td>
+              <td>142 min</td>
+            </tr>
+            <tr>
+              <td><strong>Format</strong></td>
+              <td>Widescreen</td>
+            </tr>
+          </table>
+        </div>
       </div>
     </div>
-    <div>
-    <a name="Skills"></a>
-      <h4>Skills</h4>
-      <ul>
-        <li>Program Management</li>
-        <li>Analytics</li>
-      </ul>
-    </div>
-    <div>
-    <a name="Hobbies"></a>
-      <h4>Hobbies</h4>
-      <ul>
-        <li>Dancing</li>
-        <iframe width="420" height="315" src="https://www.youtube.com/embed/cBf3RCjWcHA" frameborder="0" allowfullscreen></iframe>
-        <iframe width="420" height="315" src="https://www.youtube.com/embed/l7lawMJ5u80" frameborder="0" allowfullscreen></iframe>
-      </ul>
-    </div>
-    <div>
-    <a class="twitter-timeline"  href="https://twitter.com/manan_ritwik" data-widget-id="686448147418210304">Tweets by @manan_ritwik</a>
-    <script>!function(d,s,id){var js,fjs=d.getElementsByTagName(s)[0],p=/^http:/.test(d.location)?'http':'https';if(!d.getElementById(id)){js=d.createElement(s);js.id=id;js.src=p+"://platform.twitter.com/widgets.js";fjs.parentNode.insertBefore(js,fjs);}}(document,"script","twitter-wjs");</script>
-    </div>
-  </div>
-</font></body>
+  </body>
 </html>
