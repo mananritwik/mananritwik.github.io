@@ -53,3 +53,6 @@ h2 {
 .item span {
     font-style: normal;
 }
+.thumbnail > img { 
+  height: 100px;
+}
